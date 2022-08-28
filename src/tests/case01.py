@@ -1,5 +1,5 @@
-from systeminfo.main import get_system_info
+from daily_art.main import add_one
 
 
-print(get_system_info)
+print(add_one(1))
 
