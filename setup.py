@@ -6,10 +6,11 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name='dailyArt',
-    version='0.0.2',
+    version='0.0.1',
     author='Jonathan',
     author_email='xyzning@qq.com',
-    long_description='This is a demo of setup, do not install this package.',
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     description='private package. too many functions.',
     url='https://github.com/Jonathan-art116/dailyArt.git',
     project_urls={
