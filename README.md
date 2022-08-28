@@ -1,2 +1,3 @@
-###  this is demo for setuptools
-###  make a function to print system info 
+## !!! Do not install this package 
+
+## This is a demo to setuptool 
