@@ -11,9 +11,9 @@ setup(
     author_email='xyzning@qq.com',
     long_description='This is a demo of setup, do not install this package.',
     description='private package. too many functions.',
-    url='https://github.com/Jonathan-art116/systeminfo.git',
+    url='https://github.com/Jonathan-art116/dailyArt.git',
     project_urls={
-        "Bug Tracker": "https://github.com/mahesh-maximus/helloworld-pyp/issues",
+        "Bug Tracker": "https://github.com/Jonathan-art116/dailyArt/issues",
     },
     package_dir={'': "src"},
     packages=find_packages("src"),
