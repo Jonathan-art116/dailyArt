@@ -11,5 +11,10 @@ def get_system_info():
     return os.uname()
 
 
+def add_one(number):
+    return number + 1
+    
+
 if __name__ == "__main__":
     get_system_info()
+    

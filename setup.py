@@ -1,36 +1,50 @@
 from setuptools import setup, find_packages
 
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
+
+
 setup(
-    name='Jonathan-art116',
+    name='dailyArt',
     version='0.0.2',
     author='Jonathan',
     author_email='xyzning@qq.com',
     long_description='This is a demo of setup, do not install this package.',
+    description='private package. too many functions.',
     url='https://github.com/Jonathan-art116/systeminfo.git',
-    packages = find_packages(),
-    classifiers = [
+    project_urls={
+        "Bug Tracker": "https://github.com/mahesh-maximus/helloworld-pyp/issues",
+    },
+    package_dir={'': "src"},
+    packages=find_packages("src"),
+    license="GNU",
+    include_package_data=True,
+    classifiers=[
         # 发展时期,常见的如下
         #   3 - Alpha
         #   4 - Beta
         #   5 - Production/Stable
-        'Development Status :: 3 - Alpha',
+        # 'Development Status :: 3 - Alpha',
 
         # 开发的目标用户
-        'Intended Audience :: Developers',
+        # 'Intended Audience :: Developers',
 
         # 属于什么类型
-        'Topic :: Software Development :: Build Tools',
+        # 'Topic :: Software Development :: Build Tools',
 
         # 许可证信息
         'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
 
         # 目标 Python 版本
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
     ],
 
      # 用来支持自动生成脚本，安装后会自动生成 /usr/bin/foo 的可执行文件
@@ -87,8 +101,7 @@ setup(
 
     # 希望被打包的文件
     # package_data={
-    #     '':['*.txt'],
-    #     'bandwidth_reporter':['*.txt']
+    #     'src': '*',
     #            },
     # 不打包某些文件
     # exclude_package_data={
